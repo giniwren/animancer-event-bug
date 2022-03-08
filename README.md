@@ -2,11 +2,15 @@
 
 A project for investigating a potential bug of the Animancer plugin for Unity.
 
+Bug Report: https://github.com/KybernetikGames/animancer/issues/193
+
 ## To Run
 
-Clone the repository, open the `SampleScene` scene in Unity, then press the `Play` button in the editor.
+1. Clone the repository
+2. Open the `SampleScene` scene in Unity.
+3. Press the `Play` button in the editor.
 
-Once running, the color of the square in the middle of the scene will fade repeatedly between white and blue.
+Once running, the square in the middle of the scene will move from left to right.
 
 ## Details
 
@@ -14,7 +18,7 @@ When using Animancer to play animations, Unity's standard animation events fire 
 
 ### To Observe the Bug
 
-Press the spacebar. The square changes colors rapidly from white to green a few times before returning to the white -> blue animation. A message is logged to Unity's console window when the animation event fires.
+Press the spacebar. The square will move up and down a few times before returning to the left -> right animation. A message is logged to Unity's console window when the animation event fires.
 
 **Expected Outcome**: When player presses the spacebar, only one message should be logged in Unity's console from the animation event firing one time.
 
